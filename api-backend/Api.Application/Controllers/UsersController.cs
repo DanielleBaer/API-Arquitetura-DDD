@@ -13,6 +13,7 @@ namespace Api.Application.Controllers
     public class UsersController : ControllerBase
     {
         private IUserService _service;
+        //injeção de dependência a partir do construtor
         public UsersController(IUserService service)
         {
             _service = service;
